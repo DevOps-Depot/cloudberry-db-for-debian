@@ -1,0 +1,48 @@
+Source: cloudberrydb-1
+Maintainer: Cloudberry Open Source<cloudberrydb@gmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 4.6.2
+Build-Depends:
+ bison,
+ debhelper-compat (= 13),
+ flex,
+ libapr1-dev,
+ libaprutil1-dev,
+ libbz2-dev,
+ libcurl4-openssl-dev,
+ libevent-dev,
+ libkrb5-dev,
+ libldap2-dev,
+ libpam0g-dev,
+ libperl-dev,
+ libpython2-dev,
+ libreadline-dev,
+ libssl-dev,
+ libxerces-c-dev,
+ libxml2-dev,
+ libyaml-dev,
+ libzstd-dev,
+ pkg-config,
+ python2,
+ zlib1g-dev
+Vcs-Browser: https://github.com/cloudberrydb/cloudberry-db-for-debian
+Vcs-Git: https://github.com/clouidberrydb/cloudberry-db-for-debian.git -b main [cloudberrydb]
+
+Package: cloudberry-db-1
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ less,
+ locales,
+ net-tools,
+ openssh-server,
+ python2
+Description: Massively Parallel PostgreSQL for Analytics
+ Cloudberry Database (CBDB) is an advanced, fully featured, open
+ source data warehouse, based on PostgreSQL and Greenplum. It provides
+ powerful and rapid analytics on petabyte scale data volumes. Uniquely
+ geared toward big data analytics, Cloudberry Database is powered by
+ the world’s most advanced cost-based query optimizer delivering high
+ analytical query performance on large data volumes.

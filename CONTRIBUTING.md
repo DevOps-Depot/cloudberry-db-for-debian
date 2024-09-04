@@ -1,6 +1,6 @@
-# Contributing to Greenplum Database Package for Debian
+# Contributing to Cloudberry Database Package for Debian
 
-The Greenplum DB for Debian project team welcomes contributions from the
+The Cloudberry DB for Debian project team welcomes contributions from the
 community.
 
 If you wish to contribute code, but you have not signed our [contributor
@@ -18,8 +18,8 @@ export DEBFULLNAME="<your-name-here>"
 export DEBEMAIL="<your-email-here>"
 ```
 
-* gpdb - the packaging tree; this directory should only contain one directory
-  named debian
+* cloudberrydb - the packaging tree; this directory should only
+  contain one directory named debian
   * debian - Debian packaging directory
 
 ## Helpful Links
@@ -31,49 +31,35 @@ export DEBEMAIL="<your-email-here>"
 [0]: https://www.debian.org/doc/manuals/debmake-doc/index.en.html
 [1]: https://www.debian.org/doc/manuals/maint-guide/
 
-## How to Build A Package for a New Upstream GPDB Version
+## How to Build A Package for a New Upstream CBDB Version
 
 ```sh
-cd gpdb
+cd cloudberrydb
 uscan
 dch --newversion <new-upstream-version> ""
 origtargz
 sbuild [--dist=<target-distribution>]
 ```
 
-### Example 1: Build GP 6.24.2-1
-
-**NOTE:** The Debian Stable release is required for Greenplum 6. This
-is a result of Python 2 and related packages not being available in
-Debian Unstable (Sid),
+### Example 1: Build Cloudberry DB 1.6.0-1
 
 ```sh
-cd ~/greenplum-db-for-debian/gpdb
+cd ~/cloudberry-db-for-debian/cloudberrydb
 git checkout main
 uscan -vv
-dch --newversion 6.24.2-1 ""
+dch --newversion 1.6.0-1 ""
 origtargz
 sbuild --dist=stable
 ```
 
-### Example 2: Build GP 7.0.0 Beta 2
-
-```sh
-cd ~/greenplum-db-for-debian/gpdb
-git checkout 7
-uscan -vv
-dch --newversion 7.0.0~beta.2-2 ""
-origtargz
-sbuild --dist=unstable
-```
-
 ## How to Add a New Debian Patch
 
-**Note:** Generally these patches should be used for making Greenplum DB into a
-proper Debian package and _not_ for fixing bugs in upstream Greenplum DB.
+**Note:** Generally these patches should be used for making Cloudberry
+DB into a proper Debian package and _not_ for fixing bugs in upstream
+Cloudberry DB.
 
 ```sh
-cd gpdb
+cd cloudberrydb
 
 # start with a clean source tree
 origtargz --clean
@@ -104,7 +90,7 @@ quilt pop -a
 ## How to Update an Existing Debian Patch
 
 ```sh
-cd gpdb
+cd cloudberrydb
 
 # start with a clean source tree
 origtargz --clean

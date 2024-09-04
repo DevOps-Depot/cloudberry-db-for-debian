@@ -1,15 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Greenplum Database
-Source: https://github.com/greenplum-db/gpdb
+Upstream-Name: Cloudberry Database
+Source: https://github.com/cloudberrydb/cloudberrydb
 
 Files: *
-Copyright: Copyright (c) 2004-2015 Pivotal Software, Inc.
 License: Apache-2.0
  All Rights Reserved.
  .
- Greenplum Database is licensed under the Apache License Version 2.0
- (see LICENSE & NOTICE) and is based on the PostgreSQL Database
- Management System.
+ Cloudberry Database is licensed under the Apache License Version 2.0
+ (see LICENSE & NOTICE) and is based on the PostgreSQL and Greenplum
+ Database Management Systems.
  .
  PostgreSQL is released under the PostgreSQL License.  The full text of
  the PostgreSQL License is provided below:
@@ -42,7 +41,6 @@ Comment:
  /usr/share/common-licenses/Apache-2.0
 
 Files: debian/*
-Copyright: Copyright 2021 VMware, Inc.
 License: Apache-2.0
 Comment:
  On Debian systems a copy of the Apache-2.0 license can be viewed at:

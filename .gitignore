@@ -2,23 +2,23 @@
 .envrc
 
 # ignore downloaded upstream source archives
-gpdb-*.tar.gz
-gpdb_*.orig.tar.gz
+cloudberrydb-*.tar.gz
+cloudberrydb_*.orig.tar.gz
 
 # ignore Debian package build artifacts
-gpdb*.debian.tar.xz
-gpdb*.dsc
-gpdb*.build
-gpdb*.buildinfo
-gpdb*.changes
-greenplum-db-?-dbgsym_*.deb
-greenplum-db-?-dbgsym_*.ddeb
-greenplum-db-?_*.deb
+cloudberrydb*.debian.tar.xz
+cloudberrydb*.dsc
+cloudberrydb*.build
+cloudberrydb*.buildinfo
+cloudberrydb*.changes
+cloudberry-db-?-dbgsym_*.deb
+cloudberry-db-?-dbgsym_*.ddeb
+cloudberry-db-?_*.deb
 
 # ignore upload files
-gpdb*.upload
+cloudberrydb*.upload
 
 # ignore unpacked source code
-gpdb/**
-!gpdb/debian/
-!gpdb/debian/**
+cloudberrydb/**
+!cloudberrydb/debian/
+!cloudberrydb/debian/**

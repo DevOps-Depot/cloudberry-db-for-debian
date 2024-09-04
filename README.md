@@ -1,20 +1,20 @@
-# Greenplum DB for Debian
+# Cloudberry DB for Debian
 
 ## Overview
 
-Packaging of Greenplum Database for Debian and Debian-derived Linux
+Packaging of Cloudberry Database for Debian and Debian-derived Linux
 distributions. Contains configuration and metadata needed for existing OSS
 tooling to build binary installers from source in compliance with the technical
 and licensing requirements of the Debian archive.
 
 The major goals of this project are:
 
-1. Produce packages of Greenplum Database in compliance with the technical and
+1. Produce packages of Cloudberry Database in compliance with the technical and
    licensing requirements of the Debian project
-2. Make it easier for OSS users to install and run Greenplum Database
+2. Make it easier for OSS users to install and run Cloudberry Database
 
 Based on these two goals, this project will follow the Debian project as much
-as possible but ultimately defer to the existing OSS Greenplum Database
+as possible but ultimately defer to the existing OSS Cloudberry Database
 project’s model.
 
 ## Contributing
@@ -31,6 +31,6 @@ Feedback is welcome via the GitHub site as [issues][] or [pull requests][].
 Everyone involved in working on the project's source code or engaging in any
 issue trackers are expected to follow the [Code of Conduct][].
 
-[issues]: https://github.com/greenplum-db/greenplum-db-for-debian/issues
-[pull requests]: https://github.com/greenplum-db/greenplum-db-for-debian/pulls
+[issues]: https://github.com/DevOps-Depot/cloudberry-db-for-debian/issues
+[pull requests]: https://github.com/DevOps-Depot/cloudberry-db-for-debian/pulls
 [Code of Conduct]: CODE-OF-CONDUCT.md
