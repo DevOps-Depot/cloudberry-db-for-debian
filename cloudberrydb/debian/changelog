@@ -1,5 +1,5 @@
-cbdb-1 (1.6.0) UNRELEASED; urgency=medium
+cloudberry-db-1 (1.6.0-1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
 
- -- Cloudberry Open Source <cloudberrydb@gmail.com>  Wed, 04 Sep 2024 10:53:36 -0700
+ -- Cloudberry Open Source <cloudberrydb@gmail.com>  Wed, 04 Sep 2024 19:45:55 +0000

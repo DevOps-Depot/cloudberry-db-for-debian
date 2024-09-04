@@ -1,4 +1,4 @@
 version=4
-opts="searchmode=plain,downloadurlmangle=s%archive/refs/tags/@ANY_VERSION@.tar.gz%releases/download/$1/$1-src-full.tar.gz%,filenamemangle=s%(?:.*?/)@ANY_VERSION@\.tar\.gz%@PACKAGE@_$1.tar.gz%" \
-    https://github.com/DevOps-Depot/cloudberrydb/tags \
-    (?:[^"]*?/)(1[\-+\.:\~\da-zA-Z]*).tar.gz debian
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%cloudberry-db-1_$1.orig.tar.gz%" \
+  https://github.com/cloudberrydb/cloudberrydb/tags \
+  (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
